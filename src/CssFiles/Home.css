@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Home Container */
+  .home {
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a89a7;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    color: #384959;
+    margin-bottom: 10px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    color: #384959;
+    margin-bottom: 20px;
+  }
+  
+  .hero-button {
+    background-color: #384959;
+    color: #384959;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #bdddfc;
+    color: #384959;
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blog Highlights Section */
+  .blog-highlights {
+    background-color: #6a89a7;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: #384959;
+    margin-bottom: 20px;
+  }
+  
+  .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background-color: #bdddfc;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .blog-card-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card-title {
+    font-size: 1.2rem;
+    color: #384959;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card-description {
+    font-size: 0.9rem;
+    color: #384959;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .blog-cards {
+      flex-direction: column;
+    }
+  }

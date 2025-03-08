@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #2278d462;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Brand Name */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #384959;
+}
+
+/* Hamburger Menu */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #12161a;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburger.open {
+  transform: rotate(45deg);
+}
+
+.hamburger.open::before {
+  transform: rotate(90deg);
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #384959;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #88bdf2;
+  color: #384959;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    flex-direction: column;
+    background-color: #6a89a7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 10px;
+    display: none; /* Hide by default */
+    opacity: 0; /* Start with opacity 0 for smooth transition */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px); /* Slight upward shift for animation */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show when active */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset to original position */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}
